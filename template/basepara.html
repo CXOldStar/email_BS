@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block navigation %}
+<li><a href="/"> Overview </a></li>
+<li class="active"><a href="/basepara/"> Server-para <span class="sr-only">(current)</span></a></li>
+<li><a href="/email-content/"> Email-content </a></li>
+<li><a href="/sender/"> Sender </a></li>
+{% end %}
+
+{% block header %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <h1 class="page-header">Base Para Setting</h1>
+    <h3 class="page-header">Server Para Setting</h3>
+    <label >Server UserName: <span>{{ email_sender }}</span></label>
+    <label >Server UserName: <span>{{ server_username }}</span></label>
+    <label >Server Password: {{ server_password }}</label>
+    <label >Server Host: <span>{{ server_host }}</span></label>
+    <label >Server Port: <span>{{ server_port }}</span></label>
+</div>
+{% end %}
